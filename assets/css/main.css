@@ -150,7 +150,9 @@ p {
 }
 
 .web-image {
-
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	width: 350px;
 	height: 500px;
 	border-radius: 165px;
@@ -160,21 +162,24 @@ p {
 	color: #A6713F;
 	text-align: center;
 }
-/*.ca-menu{
+
+.ca-menu{
     padding:0;
     margin:20px 0px 20px 0px;
-}*/
+}
 
 .ca-menu li{
     width: 250px;
     height: 250px;
     border-radius: 50%;
     border: solid 1px #DBC6B2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     position: relative;
-    float:left;
+    /*float:left;*/
     background: #fff;
-    margin-right: 60px;
     -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
@@ -187,9 +192,7 @@ p {
     -ms-transition: all 400ms linear;
     transition: all 400ms linear;
 }
-.ca-menu li:last-child{
-    margin-right: 0px;
-}
+
 .ca-menu li a{
     text-align: left;
     width: 100%;
@@ -270,7 +273,6 @@ box-shadow:0px 0px 3px #000000;
 }
 
 .col-md-9 {
-	width: 70%;
 	text-align: center;
 }
 
@@ -321,14 +323,23 @@ box-shadow:0px 0px 3px #000000;
 	color: #888;
 }
 .client-image {
-			width: 180px;
-			height: 101px;
-			float: left;
-			margin: 0 20px 0 0;
+	width: 180px;
+	height: 101px;
 }
+
 .client-logo {
-		border-radius: 10%;
+	border-radius: 10%;
+	margin-bottom: 3em;
 }
+
+.padded {
+	padding: 5em;
+}
+
+.s-column {
+	margin-left: 7em;
+}
+
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: 'Raleway', serif;
@@ -368,6 +379,11 @@ box-shadow:0px 0px 3px #000000;
     background-color: #CC7A7A;
 }
 
+.gc img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 @media(min-width:768px) {
     .navbar-default {
         /*padding: 5px 0;*/
