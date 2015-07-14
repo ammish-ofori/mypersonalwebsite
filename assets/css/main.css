@@ -308,7 +308,7 @@ box-shadow:0px 0px 3px #000000;
 #serve {
 	background-color: #ffaa9a;
 	padding-bottom: 80px;
-	margin: 0 93px 0 93px;
+	/*margin: 0 93px 0 93px;*/
 	border-radius: 10px;
 	 -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 5s infinite;
@@ -345,7 +345,7 @@ box-shadow:0px 0px 3px #000000;
 		text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 		letter-spacing: 5px;
 		font-family: 'Dancing Script', sans-serif;
-		text-align: justify;
+		text-align: center;
 		/*margin-left: -90px;*/
 		}
 		#header-h2 {
@@ -356,7 +356,7 @@ box-shadow:0px 0px 3px #000000;
 			font-size: 22px;
 			/*margin-left: 20px;*/
 			color: #888;
-			text-align: justify;
+			text-align: center;
 		}
 		.other-h3 {
 			position: relative;
