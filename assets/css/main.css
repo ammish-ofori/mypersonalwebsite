@@ -165,15 +165,21 @@ p {
 }
 
 .subscribe {
-	width: 320px;
+	width: 330px;
     height: 330px;
-    border-radius: 10px;
+    border-radius: 150%;
+    position: absolute;
     background-color: #ffaa9a;
-    margin-top: 80px;
+    margin-top: 45px;
+    padding: 60px 40px 60px 40px;
     color: #535353;
     text-align: center;
     -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 5s infinite;
+}
+.mp{
+	font-family: 'Dancing Script';
+	font-size: 26px;
 }
 .btn {
 	background-color: #A6713F;
@@ -308,22 +314,8 @@ box-shadow:0px 0px 3px #000000;
 #serve {
 	background-color: #ffaa9a;
 	padding-bottom: 80px;
-	/*margin: 0 93px 0 93px;*/
 	border-radius: 10px;
-	 -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 5s infinite;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    50% {box-shadow: 10px 20px 50px #000;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    50% {box-shadow: 10px 20px 50px #000;}
-}
-
+	}
 	#features-wrapper {
 		position: relative;
 		overflow: hidden;
@@ -396,7 +388,7 @@ box-shadow:0px 0px 3px #000000;
     font-family: 'Raleway', serif;
     font-weight: 600;
     color: #000;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 .navbar-default {
     border-color: transparent;
