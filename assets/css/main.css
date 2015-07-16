@@ -163,16 +163,13 @@ p {
 	color: #A6713F;
 	text-align: center;
 }
-.content {
-	margin-top: 40px;
-}
 .subscribe {
 	width: 330px;
     height: 300px;
     border-radius: 20px;
     position: absolute;
     background-color: #ffaa9a;
-    margin-top: 35px;
+    margin-top: 35px auto;
     padding: 15px 30px 20px 30px;
     color: #535353;
     text-align: center;
@@ -194,9 +191,6 @@ p {
 }
 .client {
 	margin-top: 54px;
-}
-.col-md-8 {
-	margin-top: 15px;
 }
 .btn {
 	background-color: #A6713F;
@@ -263,7 +257,7 @@ p {
 		}
 
 .social-icons {
-	padding: 30px 40px 30px 40px;
+	padding: 30px 15px 30px 15px;
 	color: #A6713F;
 	}
 .client-image {
@@ -278,6 +272,8 @@ p {
 
 .padded {
 	padding: 5em;
+	float: right;
+	margin-top: 15px;
 }
 
 .s-column {
