@@ -197,7 +197,11 @@ p {
 	color: #fff;
 	cursor: pointer;
 }
-
+.thanks {
+	height: 100px;
+	background-color: #ffaa9a;
+	font-size: 35px;
+}
 .col-md-9 {
 	text-align: center;
 }

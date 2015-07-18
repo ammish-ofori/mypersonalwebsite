@@ -3,13 +3,13 @@
 if($_POST["submit"]) {
     $recipient="kelechiudoagwu@gmail.com";
     $subject="Potential client from website";
-    $sender=$_POST["PotentialClient"];
-    $senderEmail=$_POST["PotentialClientEmail"];
-    $message=$_POST["Inquiry"];
+    $PotentialClient=$_POST["PotentialClient"];
+    $PotentialClientEmail=$_POST["PotentialClientEmail"];
+    $Inquiry=$_POST["Inquiry"];
 
-    $mailBody="Name: $PotentialClient\nEmail: $PotentialClientEmail\n\n$Inquiry";
+    $mailBody="Name: $PotentialClient\nEmail: $PotentialClientEmail\n\n$Inquiry: $Inquiry";
 
-    mail($recipient, $subject, $mailBody, "From: My Website");
+    mail($recipient, $subject, $mailBody, "From: website@kelechiudoagwu.com");
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
@@ -64,6 +64,10 @@ if($_POST["submit"]) {
                 </ul>
             </div>
     </nav>
+    <div class="thanks wow shake">
+    		<?=$thankYou ?>
+
+    </div>
 <div id="home">
 	<div class="container">
 		<div class="row">
@@ -180,17 +184,16 @@ if($_POST["submit"]) {
     <div class = "row serve"><br><br>
       <div class="col-xs-12 col-lg-10 col-lg-offset-1 bodytext">
            <div class = "container-fluid">
-												<?=$thankYou ?>
 
-    <form method="post" action="index.php" role="form">
+    <form method="post" action="index.html">
     	<div class="form-group">
-       <br><div><label>Name:</label>
+       <br><div><label>Name :</label>
        <input name="PotentialClient" type="text" class="form-control" placeholder="What's your full name, please"></div>
 
-        <br><div><label>Email address:</label>
+        <br><div><label>Email :</label>
         <input name="PotentialClientEmail" type="text" class="form-control" placeholder="Enter your active email so I can get back to you!"></div>
 
-        <br><div><label>Inquiry:</label>
+        <br><div><label>Inquiry :</label>
         <textarea rows="8" cols="104" name="Inquiry" class="form-control" placeholder="A short (and detailed) description of your inquiry/ need"></textarea></div>
 
         <br><input type="submit" name="submit" class="btn">
