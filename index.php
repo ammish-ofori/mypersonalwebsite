@@ -2,14 +2,14 @@
 
 if($_POST["submit"]) {
     $recipient="kelechiudoagwu@gmail.com";
-    $subject="Potential client from website";
-    $PotentialClient=$_POST["PotentialClient"];
-    $PotentialClientEmail=$_POST["PotentialClientEmail"];
-    $Inquiry=$_POST["Inquiry"];
+    $subject="Potential Client";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
 
-    $mailBody="Name: $PotentialClient\nEmail: $PotentialClientEmail\n\n$Inquiry: $Inquiry";
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: website@kelechiudoagwu.com");
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
@@ -187,14 +187,14 @@ if($_POST["submit"]) {
 
     <form method="post" action="index.php">
     	<div class="form-group">
-       <br><div><label>Name :</label>
-       <input name="PotentialClient" type="text" class="form-control" placeholder="What's your full name, please"></div>
+       <br><div><label>Name:</label>
+       <input name="sender" type="text" class="form-control" placeholder="What's your full name, please"></div>
 
-        <br><div><label>Email :</label>
-        <input name="PotentialClientEmail" type="text" class="form-control" placeholder="Enter your active email so I can get back to you!"></div>
+        <br><div><label>Email address:</label>
+        <input name="senderEmail" type="text" class="form-control" placeholder="Enter your active email so I can get back to you!"></div>
 
         <br><div><label>Inquiry :</label>
-        <textarea rows="8" cols="104" name="Inquiry" class="form-control" placeholder="A short (and detailed) description of your inquiry/ need"></textarea></div>
+        <textarea rows="8" cols="104" name="message" class="form-control" placeholder="A short (and detailed) description of your inquiry/ need"></textarea></div>
 
         <br><input type="submit" name="submit" class="btn">
      </div>
