@@ -1,20 +1,4 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="kelechiudoagwu@gmail.com";
-    $subject="Potential client from website";
-    $PotentialClient=$_POST["PotentialClient"];
-    $PotentialClientEmail=$_POST["PotentialClientEmail"];
-    $Inquiry=$_POST["Inquiry"];
-
-    $mailBody="Name: $PotentialClient\nEmail: $PotentialClientEmail\n\n$Inquiry: $Inquiry";
-
-    mail($recipient, $subject, $mailBody, "From: website@kelechiudoagwu.com");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -29,7 +13,7 @@ if($_POST["submit"]) {
   <META property="og:url" content="https://kelechiudoagwu.com/" />
   <META property="og:image" content="images/kelechi_udoagwu.png" />
   <META property="og:site_name" content="Kelechi Udoagwu - Communications and Business Development" />
-	<!-- styles -->
+
 	<link href='http://fonts.googleapis.com/css?family=Raleway|Dancing+Script' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -64,10 +48,6 @@ if($_POST["submit"]) {
                 </ul>
             </div>
     </nav>
-    <div class="thanks wow shake">
-    		<?=$thankYou ?>
-
-    </div>
 <div id="home">
 	<div class="container">
 		<div class="row">
@@ -184,54 +164,24 @@ if($_POST["submit"]) {
     <div class = "row serve"><br><br>
       <div class="col-xs-12 col-lg-10 col-lg-offset-1 bodytext">
            <div class = "container-fluid">
-
-    <form method="post" action="index.html">
+           
+    <form method="post" action="acknowledge.php">
     	<div class="form-group">
-       <br><div><label>Name :</label>
-       <input name="PotentialClient" type="text" class="form-control" placeholder="What's your full name, please"></div>
+       <br><div><label>Name:</label>
+       <input name="sender" type="text" class="form-control" placeholder="What's your full name, please"></div>
 
-        <br><div><label>Email :</label>
-        <input name="PotentialClientEmail" type="text" class="form-control" placeholder="Enter your active email so I can get back to you!"></div>
+        <br><div><label>Email address:</label>
+        <input name="senderEmail" type="text" class="form-control" placeholder="Enter your active email so I can get back to you!"></div>
 
-        <br><div><label>Inquiry :</label>
-        <textarea rows="8" cols="104" name="Inquiry" class="form-control" placeholder="A short (and detailed) description of your inquiry/ need"></textarea></div>
+        <br><div><label>Inquiry:</label>
+        <textarea rows="8" cols="104" name="message" class="form-control" placeholder="A short (and detailed) description of your inquiry/ need"></textarea></div>
 
-        <br><input type="submit" name="submit" class="btn">
+        <br><input type="submit" name="send" class="btn">
      </div>
     </form><br>
-<!-- <form role="form">
-								<div class="form-group">
-									<div for="name">Name</div>
-									<input type="text" class="form-control" placeholder="What's your full name, please">
-								</div>
-							</form>
-							<form role="form">
-								<div class="form-group">
-									<div for="name">Email Address</div>
-									<input type="text" class="form-control" placeholder="Enter your active email so I can get back to you!">
-								</div>
-								</form>
-								<form role="form">
-								<div class="form-group">
-									<div for="name">Company Website or Facebook Page</div>
-									<input type="text" class="form-control" placeholder="Or any useful link to confirm that you are a real potential client">
-								</div>
-								</form>
-								<form role="form">
-									<div class="form-group">
-										<div for="name">Inquiry</div>
-										<textarea rows="8" cols="104"  class="form-control" placeholder="A short (and detailed) description of your inquiry/ need"></textarea>
-									</div>
-								</form>
-								<button class="btn">Send</button>
-							</div>					
-						</div>
-					</div> -->
-
 
 <div class="row">
 <center> 
-<!-- <h3 class="other-h3">My Social Network:</h3>  -->
  <a class="social-icons" href="https://linkedin.com/in/kelechiudoagwu" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
  <a class="social-icons" href="https://www.facebook.com/mskelechi.udoagwu" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
  <a class="social-icons" href="https://twitter.com/Kay_Bellybutton" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
@@ -247,9 +197,6 @@ if($_POST["submit"]) {
 				<p class="text-center">Copyright &copy; 2015. All rights reserved. Kelechi Udoagwu.</p>
 </div>
 
-
-
-	<!-- scripts -->		
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
