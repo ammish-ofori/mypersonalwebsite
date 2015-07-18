@@ -64,10 +64,6 @@ if($_POST["submit"]) {
                 </ul>
             </div>
     </nav>
-    <div class="thanks wow shake">
-    		<?=$thankYou ?>
-
-    </div>
 <div id="home">
 	<div class="container">
 		<div class="row">
@@ -184,20 +180,20 @@ if($_POST["submit"]) {
     <div class = "row serve"><br><br>
       <div class="col-xs-12 col-lg-10 col-lg-offset-1 bodytext">
            <div class = "container-fluid">
-
+           	<?=$thankYou ?>
     <form method="post" action="index.php">
-    	<div class="form-group">
+    	
        <br><div><label>Name:</label>
-       <input name="sender" type="text" class="form-control" placeholder="What's your full name, please"></div>
+       <input name="sender"></div>
 
         <br><div><label>Email address:</label>
-        <input name="senderEmail" type="text" class="form-control" placeholder="Enter your active email so I can get back to you!"></div>
+        <input name="senderEmail"></div>
 
         <br><div><label>Inquiry :</label>
-        <textarea rows="8" cols="104" name="message" class="form-control" placeholder="A short (and detailed) description of your inquiry/ need"></textarea></div>
+        <textarea rows="8" cols="104" name="message"></textarea></div>
 
-        <br><input type="submit" name="submit" class="btn">
-     </div>
+        <br><input type="submit" name="submit">
+    
     </form><br>
 <!-- <form role="form">
 								<div class="form-group">
