@@ -203,7 +203,7 @@ p {
 #serve {
 	background-color: #826a56;
 	padding-bottom: 80px;
-	border-radius: 10px;
+	background-position: fixed;
 	color: #fff;
 	}
 	#serve h2 {
@@ -212,13 +212,9 @@ p {
 	#serve p {
 		color: #F0F0F0;
 	}
-	.serve {
-	background-color: #ffaa9a;
-	border-radius: 10px;
-	}
 	.serve2{
 		background-color: #826a56;
-		border-radius: 10px;
+		background-position: fixed;
 	}
 .form_title {
 	font-family: 'Raleway';
