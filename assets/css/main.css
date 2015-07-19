@@ -201,21 +201,12 @@ p {
 	text-align: center;
 }
 #serve {
-	background-color: #826a56;
+	background-color: #FAAA9D;
 	padding-bottom: 80px;
 	background-position: fixed;
 	color: #fff;
 	}
-	#serve h2 {
-		color:#F0F0F0;
-	}
-	#serve p {
-		color: #F0F0F0;
-	}
-	.serve2{
-		background-color: #826a56;
-		background-position: fixed;
-	}
+	
 .form_title {
 	font-family: 'Raleway';
 	font-weight: bold;
@@ -264,7 +255,7 @@ p {
 
 .social-icons {
 	padding: 30px 15px 30px 15px;
-	color: #f0f0f0;
+	color: #A6713F;
 	}
 	/*.social-icons:hover {
 		background-color: #b74c3d;
