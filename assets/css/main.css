@@ -28,7 +28,7 @@
 
 		/* Basic */
 	body {
-		background: #f0f0f0;
+		background-color: #f0f0f0;
 		font-family: 'Raleway', serif;
 		font-weight: 300;
 		color: #535353;
@@ -239,14 +239,14 @@ p {
 .blogfont {
 	font-family: 'Dancing Script';
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 22px;
 }
 .subscribe {
 	width: 290px;
     height: 300px;
     border-radius: 20px;
     background-color: #ffaa9a;
-    margin-top: 35px auto;
+    margin: 0 auto;
     padding: 15px 30px 20px 30px;
     color: #535353;
     text-align: center;
@@ -263,7 +263,7 @@ p {
 }
 
 .padded {
-	padding: 3em;
+	padding: 5em;
 	float: right;
 	margin-top: 15px;
 }
@@ -278,7 +278,7 @@ p {
 	height: 563px;
 	width: 320px;
 	border-radius: 10px;
-	
+
 }
 .navbar-default .nav li a {
     text-transform: uppercase;
