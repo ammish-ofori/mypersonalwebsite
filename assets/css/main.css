@@ -162,27 +162,6 @@ p {
 	color: #A6713F;
 	text-align: center;
 }
-.subscribe {
-	width: 330px;
-    height: 300px;
-    border-radius: 20px;
-    position: absolute;
-    background-color: #ffaa9a;
-    margin-top: 35px auto;
-    padding: 15px 30px 20px 30px;
-    color: #535353;
-    text-align: center;
-    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 5s infinite;
-}
-    /* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    50% {box-shadow: 10px 20px 50px #000;}
-}
-/* Standard syntax */
-@keyframes mymove {
-    50% {box-shadow: 10px 20px 50px #000;}
-}
 
 .mp{
 	font-family: 'Dancing Script';
@@ -213,18 +192,10 @@ p {
 }
 	#features-wrapper {
 		position: relative;
-		overflow: hidden;
-		text-align: center;
 		margin:20px 0px 20px 0px;
 		padding: 20px 0px 20px 0px;
+		text-align: center;
 	}
-
-		#features-wrapper p {
-			text-align: justify;
-			font-size: 16px;
-			font-family: 'Raleway', serif;
-			color: #888;
-		}
 		#header-h1 {
 		position: relative;
 		font-weight: 600;
@@ -270,17 +241,46 @@ p {
 	border-radius: 10%;
 	margin-bottom: 3em;
 }
+.blogfont {
+	font-family: 'Dancing Script';
+	font-weight: bold;
+	font-size: 24px;
+}
+.subscribe {
+	width: 290px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #ffaa9a;
+    margin-top: 35px auto;
+    padding: 15px 30px 20px 30px;
+    color: #535353;
+    text-align: center;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+    /* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {box-shadow: 10px 20px 50px #000;}
+}
+/* Standard syntax */
+@keyframes mymove {
+    50% {box-shadow: 10px 20px 50px #000;}
+}
 
 .padded {
-	padding: 5em;
+	padding: 3em;
 	float: right;
 	margin-top: 15px;
 }
-
+.padded2{
+	padding: 3em;
+}
 .s-column {
 	margin-left: 7em;
 }
-
+.contactstyle {
+	background-color: #ffaa9a;
+}
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: 'Raleway', serif;
