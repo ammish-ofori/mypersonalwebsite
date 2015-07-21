@@ -17,11 +17,6 @@
 		display: block;
 	}
 
-	body {
-		line-height: 1;
-		background-color: #FFFBFB;
-	}
-
 	ol, ul {
 		list-style: none;	
 	}
@@ -278,8 +273,12 @@ p {
 .s-column {
 	margin-left: 7em;
 }
-.contactstyle {
-	background-color: #ffaa9a;
+.gifclass {
+	margin-top: -8px;
+	height: 563px;
+	width: 320px;
+	border-radius: 10px;
+	
 }
 .navbar-default .nav li a {
     text-transform: uppercase;
