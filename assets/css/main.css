@@ -13,16 +13,16 @@
 		font-family: 'Raleway', serif;
 	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
-
+*/
 	ol, ul {
 		list-style: none;	
 	}
-	body {
+	/*body {
 		-webkit-text-size-adjust: none;
-	}
+	}*/
 
 	@media screen and (min-width: 737px) {
 
@@ -34,7 +34,7 @@
 		color: #535353;
 	}
 
-		body.is-loading * {
+	/*	body.is-loading * {
 			-moz-transition: none !important;
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
@@ -43,7 +43,7 @@
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
 			animation: none !important;
-		}
+		}*/
 
 	input, textarea, select {
 		font-family: 'Raleway', serif;
@@ -62,14 +62,12 @@
 		border: 0;
 	}
 
-	a {
+	/*a {
 		-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-		/*color: #666;*/
 		text-decoration: none;
-		/*border-bottom: solid 1px #ddd;*/
 	}
 
 		a strong {
@@ -77,7 +75,7 @@
 			-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-		}
+		}*/
 
 		a:hover {
 			color: #b74c3d;
@@ -97,10 +95,10 @@ p {
 			color: #535353;
 	}
 
-			body, input, textarea, select {
+			/*body, input, textarea, select {
 				line-height: 1.65em;
 				font-size: 13pt;
-			}
+			}*/
 
 			h2 {
 				font-size: 1.65em;
@@ -124,8 +122,6 @@ p {
 			overflow: hidden;
 			position: absolute;
 			border-radius: 10%;
-			/*top: 0;
-			left: 0;*/
 		}
 			/* Copyright */
 
@@ -154,15 +150,7 @@ p {
 	border-radius: 165px;
 	overflow: hidden;
 }
-.work {
-	color: #A6713F;
-	text-align: center;
-}
 
-.mp{
-	font-family: 'Dancing Script';
-	font-size: 26px;
-}
 .client {
 	margin-top: 54px;
 }
@@ -172,20 +160,12 @@ p {
 	cursor: pointer;
 }
 
-.col-md-9 {
-	text-align: center;
-}
 .serve {
 	background-color: #FAAA9D;
 	padding-bottom: 80px;
 	background-position: fixed;
-	color: #fff;
 	}
 	
-.form_title {
-	font-family: 'Raleway';
-	font-weight: bold;
-}
 	#features-wrapper {
 		position: relative;
 		margin:20px 0px 20px 0px;
@@ -224,9 +204,6 @@ p {
 	padding: 30px 15px 30px 15px;
 	color: #A6713F;
 	}
-	/*.social-icons:hover {
-		background-color: #b74c3d;
-	}*/
 
 .client-image {
 	width: 180px;
@@ -242,13 +219,14 @@ p {
 	font-weight: bold;
 	font-size: 22px;
 }
+
 .subscribe {
 	width: 290px;
     height: 300px;
     border-radius: 20px;
     background-color: #ffaa9a;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 32px;
     padding: 15px 30px 20px 30px;
     color: #535353;
     text-align: center;
