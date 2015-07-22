@@ -120,6 +120,7 @@ p {
 			width: 360px;
 			height: 370px;
 			margin: 10px 0px 10px 0px;
+			margin: 0 auto;
 			overflow: hidden;
 			position: absolute;
 			border-radius: 10%;
@@ -247,6 +248,7 @@ p {
     border-radius: 20px;
     background-color: #ffaa9a;
     margin: 0 auto;
+    margin-top: 20px;
     padding: 15px 30px 20px 30px;
     color: #535353;
     text-align: center;
@@ -265,7 +267,7 @@ p {
 .padded {
 	padding: 5em;
 	float: right;
-	margin-top: 15px;
+	/*margin-top: 15px;*/
 }
 .padded2{
 	padding: 3em;
@@ -274,9 +276,10 @@ p {
 	margin-left: 7em;
 }
 .gifclass {
-	margin-top: -8px;
-	height: 563px;
-	width: 320px;
+	margin-top: -15px;
+	margin: 0 auto;
+	height: 560px;
+	width: 480px;
 	border-radius: 10px;
 
 }
@@ -325,8 +328,8 @@ p {
 
 .gc img{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 @media(min-width:768px) {
     .navbar-default {
